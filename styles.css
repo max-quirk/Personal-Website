@@ -1,0 +1,288 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Euclid;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+h1 {
+  font-family: 'halis_grbook';
+  font-size: 4em;
+}
+
+a {
+  text-decoration: none;
+  color:#0499ff;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#043fff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .name {
+  display: none;
+  padding:0px;
+}
+
+#small-logo {
+  margin-bottom:0px;
+}
+
+.nav li {
+  padding: 7px 10px 0px 10px;
+}
+.nav a {
+  transition: all .5s;
+  color:white;
+}
+.nav a:hover {
+  color: #0499ff
+}
+
+header {
+  text-align: center;
+  background-repeat: no-repeat;
+  margin:auto;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 600px;
+}
+header {
+  line-height: 1.5;
+}
+
+.background-index{
+  background-image: url('images/contact.jpg');
+}
+
+.background-contact{
+  background-image: url('images/contact.jpg');
+}
+
+.logo{
+  margin-top: 170px;
+  transition: all 0.5s;
+}
+
+.logo:hover{
+  transform:scale(1.2)
+}
+
+.tag {
+  color: white;
+  margin: auto;
+  margin-top: 5px;
+  transition: all .5s;
+} 
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color: #85C1E9;
+}
+
+.contact-card {
+  margin-top: 150px;
+  padding: 20px 30px 25px;
+  margin-left: 550px;
+  max-width: 300px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  list-style-type: none;
+}
+.contact-card:hover {
+  border-color: #85C1E9;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #009900;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+  transition: all 0.2s;
+}
+
+.skills li:hover {
+  transform: scale(1.1)
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+  color:black;
+}
+
+a.twitter {
+  background-image: url(images/twitter.svg);
+  padding:2px;
+  margin:10px;
+  display: inline-block;
+  color:black;
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+  padding:2px;
+  margin:10px;
+  color:black;
+}
+a.github {
+  background-image: url(images/github.svg);
+  padding:2px;
+  margin:10px;
+  color:black;
+}
+a.mail {
+  background-image: url(images/mail.svg);
+  padding:2px;
+  margin:10px;
+  color:black;
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+a.bigsocial {
+  display: inline-block;
+  text-indent: 40px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+
+a.bigsocial:hover {
+  opacity: 1;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
